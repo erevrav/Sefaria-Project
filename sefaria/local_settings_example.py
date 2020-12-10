@@ -228,6 +228,8 @@ GOOGLE_APPLICATION_CREDENTIALS_FILEPATH = ""
 GEOIP_DATABASE = 'data/geoip/GeoLiteCity.dat'
 GEOIPV6_DATABASE = 'data/geoip/GeoLiteCityv6.dat'
 
+# restored this line to make migrate.py stop failing (unsure why it's no longer in this file, as it was mentioned in Russel's commit 13 Feb 2019 https://github.com/erevrav/Sefaria-Project/commit/3597bcb6992c1a3da9bc11352c216bae843d0a8c)
+PARTNER_GROUP_EMAIL_PATTERN_LOOKUP_FILE = None
 
 # Simple JWT
 SIMPLE_JWT = {
