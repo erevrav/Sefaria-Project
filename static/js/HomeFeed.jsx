@@ -87,6 +87,7 @@ function HomeFeedSidebar() {
                 </div>
             </div>
 
+            {/*
             <div id="homeHelp" className="section">
                 <div className="sectionInner">
                     <h2>
@@ -113,6 +114,7 @@ function HomeFeedSidebar() {
                     </a>
                 </div>
             </div>
+            */}
 
             <div id="homeEducators" className="section">
                 <div className="sectionInner">
