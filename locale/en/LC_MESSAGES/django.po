@@ -35,7 +35,7 @@ msgstr ""
 
 #: reader/views.py:514
 msgid "Explore 3,000 years of Jewish texts in Hebrew and English translation."
-msgstr ""
+msgstr "FIX THIS Explore 3,000 years of Jewish texts in Hebrew and English translation."
 
 #: reader/views.py:518 reader/views.py:2979 templates/person.html:6
 #: templates/person.html:8
@@ -49,15 +49,15 @@ msgstr ""
 #: templates/static/newsletter.html:4 templates/static/privacy-policy.html:4
 #: templates/static/terms.html:4 templates/static/visualizations.html:4
 msgid "Sefaria"
-msgstr ""
+msgstr "Toratah"
 
 #: reader/views.py:520
 msgid "A source sheet created with Sefaria's Source Sheet Builder"
-msgstr ""
+msgstr "A source sheet created with Toratah's Source Sheet Builder"
 
 #: reader/views.py:567
 msgid " | Sefaria"
-msgstr ""
+msgstr " | Toratah"
 
 #: reader/views.py:568
 #, python-format
@@ -70,19 +70,19 @@ msgstr ""
 
 #: reader/views.py:572
 msgid "Texts that you've recently viewed on Sefaria."
-msgstr ""
+msgstr "Texts that you've recently viewed on Toratah."
 
 #: reader/views.py:671
 msgid "Sefaria Search"
-msgstr ""
+msgstr "Toratah Search"
 
 #: reader/views.py:672
 msgid "Search 3,000 years of Jewish texts in Hebrew and English translation."
-msgstr ""
+msgstr "FIX THIS Search 3,000 years of Jewish texts in Hebrew and English translation."
 
 #: reader/views.py:704
 msgid "Sefaria Source Sheets"
-msgstr ""
+msgstr "Toratah Source Sheets"
 
 #: reader/views.py:705
 msgid ""
@@ -93,16 +93,16 @@ msgstr ""
 #: reader/views.py:735 reader/views.py:743 reader/views.py:750
 #: templates/groups.html:8
 msgid "Sefaria Groups"
-msgstr ""
+msgstr "Toratah Groups"
 
 #: reader/views.py:756
 msgid "My Notes on Sefaria"
-msgstr ""
+msgstr "My Notes on Toratah"
 
 #: reader/views.py:850
 msgid ""
 "Browse 1,000s of Jewish texts in the Sefaria Library by category and title."
-msgstr ""
+msgstr "FIX THIS Browse 1,000s of Jewish texts in the Sefaria Library by category and title.""
 
 #: reader/views.py:856
 msgid "My Saved Content"
@@ -110,7 +110,7 @@ msgstr ""
 
 #: reader/views.py:857
 msgid "See your saved content on Sefaria"
-msgstr ""
+msgstr "See your saved content on Toratah"
 
 #: reader/views.py:863
 msgid "My User History"
@@ -118,22 +118,24 @@ msgstr ""
 
 #: reader/views.py:864
 msgid "See your user history on Sefaria"
-msgstr ""
+msgstr "See your user history on Toratah"
 
 #: reader/views.py:870
 msgid "New Additions to the Sefaria Library"
-msgstr ""
+msgstr "New Additions to the Toratah Library"
 
 #: reader/views.py:871
 msgid ""
 "See texts, translations and connections that have been recently added to "
 "Sefaria."
 msgstr ""
+"See texts, translations and connections that have been recently added to "
+"Toratah."
 
 #: reader/views.py:877 templates/static/aramaic-translation-contest.html:4
 #: templates/static/home.html:5 templates/static/shavuot-map-2018.html:4
 msgid "Sefaria: a Living Library of Jewish Texts Online"
-msgstr ""
+msgstr Toratah: The Library of Her Bible"
 
 #: reader/views.py:878 templates/static/aramaic-translation-contest.html:6
 #: templates/static/home.html:7 templates/static/shavuot-map-2018.html:6
@@ -142,6 +144,9 @@ msgid ""
 "and English including Torah, Tanakh, Talmud, Mishnah, Midrash, commentaries "
 "and more."
 msgstr ""
+"FIX THIS The largest free library of Jewish texts available to read online in Hebrew "
+"and English including Torah, Tanakh, Talmud, Mishnah, Midrash, commentaries "
+"and more."
 
 #: reader/views.py:885
 msgid "Story Editor"
@@ -153,11 +158,11 @@ msgstr ""
 
 #: reader/views.py:897
 msgid "Sefaria Account"
-msgstr ""
+msgstr "Toratah Account"
 
 #: reader/views.py:905
 msgid "Sefaria Notifications"
-msgstr ""
+msgstr "Toratah Notifications"
 
 #: reader/views.py:912
 msgid "Moderator Tools"
@@ -177,13 +182,15 @@ msgstr ""
 
 #: reader/views.py:2980
 msgid "Explore Jewish Texts by Topic on Sefaria"
-msgstr ""
+msgstr "FIX THIS Explore Jewish Texts by Topic on Sefaria"
 
 #: reader/views.py:3011
 msgid ""
 "Texts & Source Sheets from Torah, Talmud and Sefaria's library of Jewish "
 "sources."
 msgstr ""
+"FIX THIS Texts & Source Sheets from Torah, Talmud and Sefaria's library of Jewish "
+"sources."
 
 #: reader/views.py:3012
 #, python-format
@@ -191,6 +198,8 @@ msgid ""
 "Jewish texts and source sheets about %(topic)s from Torah, Talmud and other "
 "sources in Sefaria's library."
 msgstr ""
+"FIX THIS Jewish texts and source sheets about %(topic)s from Torah, Talmud and other "
+"sources in Sefaria's library."
 
 #: reader/views.py:3304 reader/views.py:3332 reader/views.py:3428
 msgid "You must be logged in to update your profile."
@@ -292,7 +301,7 @@ msgstr ""
 
 #: templates/404.html:4
 msgid "Page Not Found | Sefaria"
-msgstr ""
+msgstr "Page Not Found | Toratah"
 
 #: templates/500.html:4
 msgid "Internal Server Error"
@@ -312,23 +321,27 @@ msgstr ""
 
 #: templates/activity.html:9 templates/activity.html:11
 msgid "Sefaria Activity"
-msgstr ""
+msgstr "Toratah Activity"
 
 #: templates/activity.html:17
-msgid "View the complete revision hisotry of this text on Sefaria."
-msgstr ""
+msgid "View the complete revision history of this text on Sefaria."
+msgstr "View the complete revision history of this text on Toratah."
 
 #: templates/activity.html:19
 msgid ""
 "View a user's acitvitiy history on Sefaria, including published source "
 "sheets, and text translations, edits or additions."
 msgstr ""
+"View a user's acitvitiy history on Toratah, including published source "
+"sheets, and text translations, edits or additions."
 
 #: templates/activity.html:21
 msgid ""
 "View the complete log of public activity on Sefaria, including published "
 "source sheets, and text translations, edits or additions. "
 msgstr ""
+"View the complete log of public activity on Toratah, including published "
+"source sheets, and text translations, edits or additions. "
 
 #: templates/activity.html:57
 msgid "All Activity"
@@ -373,7 +386,7 @@ msgstr ""
 
 #: templates/edit_group.html:8
 msgid "Edit Group on Sefaria"
-msgstr ""
+msgstr "Edit Group on Toratah"
 
 #: templates/edit_group.html:19 templates/metrics.html:18
 #: templates/sheets.html:612
@@ -382,7 +395,7 @@ msgstr ""
 
 #: templates/edit_profile.html:5
 msgid "Edit Your Profile on Sefaria"
-msgstr ""
+msgstr "Edit Your Profile on Toratah"
 
 #: templates/elements/activity_feed.html:7
 msgid "deleted the text"
@@ -586,12 +599,13 @@ msgstr ""
 
 #: templates/email/notifications_email.html:9
 msgid " Here's some new activity on Sefaria that you may have missed."
-msgstr ""
+msgstr " Here's some new activity on Toratah that you may have missed."
 
 #: templates/explore.html:4
 msgid ""
 "Link Explorer - Visualized Connections Between Talmud and Tanakh | Sefaria"
 msgstr ""
+"FIX THIS Link Explorer - Visualized Connections Between Talmud and Tanakh | Sefaria"
 
 #: templates/explore.html:4
 #, python-format
@@ -599,6 +613,8 @@ msgid ""
 "Link Explorer - Visualized Connections Between %(bottomCatTitle)s and "
 "%(topCatTitle)s | Sefaria"
 msgstr ""
+"FIX THIS Link Explorer - Visualized Connections Between %(bottomCatTitle)s and "
+"%(topCatTitle)s | Sefaria"
 
 #: templates/explore.html:6
 msgid ""
@@ -616,23 +632,27 @@ msgstr ""
 
 #: templates/leaderboard.html:4
 msgid "Top Contributors | Sefaria"
-msgstr ""
+msgstr "Top Contributors | Toratah"
 
 #: templates/leaderboard.html:6
 msgid ""
 "See who has been contributing most to Sefaria in terms of texts, "
 "translations, and source sheet."
 msgstr ""
+"See who has been contributing most to Toratah in terms of texts, "
+"translations, and source sheet."
 
 #: templates/metrics.html:5
 msgid "Sefaria Metrics"
-msgstr ""
+msgstr "Toratah Metrics"
 
 #: templates/metrics.html:7
 msgid ""
 "See graphs charting Sefaria's progress since 2013 across metrics including "
 "word counts, number of links and number of source sheets."
 msgstr ""
+"FIX THIS See graphs charting Sefaria's progress since 2013 across metrics including "
+"word counts, number of links and number of source sheets."
 
 #: templates/metrics.html:35
 msgid "Total Words in Library"
@@ -648,7 +668,7 @@ msgstr ""
 
 #: templates/metrics.html:38
 msgid "Words of Original Translation created by Sefaria Volunteers"
-msgstr ""
+msgstr "FIX THIS Words of Original Translation created by Sefaria Volunteers"
 
 #: templates/metrics.html:39
 msgid "Number of Public Contributors"
@@ -677,13 +697,15 @@ msgstr ""
 
 #: templates/people.html:5
 msgid "Authors on Sefaria"
-msgstr ""
+msgstr "Authors on Toratah"
 
 #: templates/people.html:7
 msgid ""
 "Biographies and information about the authors of Jewish texts on Sefaria, "
 "together with links to their available texts."
 msgstr ""
+"Biographies and information about the authors of Jewish texts on Toratah, "
+"together with links to their available texts."
 
 #: templates/person.html:38
 msgid "Authors"
@@ -695,13 +717,15 @@ msgstr ""
 
 #: templates/profile.html:4
 msgid "on Sefaria"
-msgstr ""
+msgstr "on Toratah"
 
 #: templates/profile.html:6
 msgid ""
 "is on Sefaria. Follow to view their public source sheets, notes and "
 "translations."
 msgstr ""
+"is on Toratah. Follow to view their public source sheets, notes and "
+"translations."
 
 #: templates/profile.html:20
 msgid "at "
@@ -729,17 +753,19 @@ msgstr ""
 
 #: templates/registration/logged_out.html:4
 msgid "Logged Out | Sefaria"
-msgstr ""
+msgstr "Logged Out | Toratah"
 
 #: templates/registration/login.html:4
 msgid "Log in to Sefaria"
-msgstr ""
+msgstr "Log in to Toratah"
 
 #: templates/registration/login.html:6
 msgid ""
 "Log in to your Sefaria account to make source sheets, write notes, and "
 "follow other Sefaria users."
 msgstr ""
+"Log in to your Toratah account to make source sheets, write notes, and "
+"follow other Toratah users."
 
 #: templates/registration/password_reset_complete.html:3
 msgid "Password Reset"
@@ -759,6 +785,8 @@ msgid ""
 "A request has been made to reset the password for this email address on "
 "Sefaria.org."
 msgstr ""
+"A request has been made to reset the password for this email address on "
+"Toratah.org."
 
 #: templates/registration/password_reset_email.html:6
 #: templates/registration/password_reset_email.txt:5
@@ -776,11 +804,11 @@ msgstr ""
 
 #: templates/registration/password_reset_form.html:6
 msgid "Request a link to change your Sefaria password if you've forgotten it."
-msgstr ""
+msgstr "Request a link to change your Toratah password if you've forgotten it."
 
 #: templates/registration/password_reset_subject.txt:2
 msgid "Sefaria.org Password Reset"
-msgstr ""
+msgstr "Toratah.org Password Reset"
 
 #: templates/registration/register.html:4
 msgid "Create an Account"
@@ -791,6 +819,8 @@ msgid ""
 "Create an account on Sefaria to make source sheets, take notes and follow "
 "other people."
 msgstr ""
+"Create an account on Toratah to make source sheets, take notes and follow "
+"other people."
 
 #: templates/sefer_hachinukh_mitzvot.html:7
 msgid "Sefer HaChinukh Visualization"
@@ -804,16 +834,16 @@ msgstr ""
 
 #: templates/sheets.html:7 templates/sheets_visual.html:4
 msgid "Start a New Sheet - Sefaria Source Sheet Builder"
-msgstr ""
+msgstr "Start a New Sheet - Toratah Source Sheet Builder"
 
 #: templates/sheets.html:9 templates/sheets.html:10
 msgid "A source sheet created with Sefaria's Source Sheet Builder."
-msgstr ""
+msgstr "A source sheet created with Toratah's Source Sheet Builder."
 
 #: templates/sheets.html:9 templates/sheets.html:10
 #: templates/sheets_visual.html:6
 msgid "Create your own source sheet with Sefaria's Source Sheet Builder."
-msgstr ""
+msgstr "Create your own source sheet with Toratah's Source Sheet Builder."
 
 #: templates/sheets.html:626 templates/sheets.html:634
 #, python-format
@@ -841,7 +871,7 @@ msgstr ""
 
 #: templates/sheets.html:912
 msgid "Made with the Sefaria Source Sheet Builder"
-msgstr ""
+msgstr "Made with the Toratah Source Sheet Builder"
 
 #: templates/sheets.html:935
 msgid "Create New"
@@ -884,7 +914,7 @@ msgstr ""
 
 #: templates/sheets_visual.html:4
 msgid "Sefaria Source Sheet Builder"
-msgstr ""
+msgstr "Toratah Source Sheet Builder"
 
 #: templates/sheets_visual.html:6
 #, python-format
@@ -892,16 +922,21 @@ msgid ""
 "Visual layout of a source sheet by %(sheet.owner|user_name)s created with "
 "Sefaria's Source Sheet Builder."
 msgstr ""
+"Visual layout of a source sheet by %(sheet.owner|user_name)s created with "
+"Toratah's Source Sheet Builder."
 
 #: templates/static/about.html:4
 msgid "About Sefaria"
-msgstr ""
+msgstr "About Toratah"
 
 #: templates/static/about.html:6
 msgid ""
 "Sefaria is a non-profit organization dedicated to building the future of "
 "Jewish learning in an open and participatory way."
 msgstr ""
+"FIX THIS Sefaria is a non-profit organization dedicated to building the future of "
+"Jewish learning in an open and participatory way."
+
 
 #: templates/static/all_home.html:4 templates/static/all_home.html:6
 msgid "TBD"
@@ -909,11 +944,11 @@ msgstr ""
 
 #: templates/static/app.html:4
 msgid "Sefaria App"
-msgstr ""
+msgstr "FIX THIS Toratah App"
 
 #: templates/static/app.html:6
 msgid "Download the free Sefaria App for iOS and Android."
-msgstr ""
+msgstr "FIX THIS Download the free Sefaria App for iOS and Android."
 
 #: templates/static/app.html:314 templates/static/mobile.html:314
 msgid "Sign up for our Newsletter"
@@ -944,29 +979,31 @@ msgstr ""
 
 #: templates/static/chavruta.html:4
 msgid "Chavruta on Sefaria"
-msgstr ""
+msgstr "Chavruta on Toratah"
 
 #: templates/static/chavruta.html:6
 msgid "Video learning on Sefaria with a partner."
-msgstr ""
+msgstr "FIX THIS Video learning on Sefaria with a partner."
 
 #: templates/static/connect.html:4
 msgid "Sefaria Newsletter, Social Media and More"
-msgstr ""
+msgstr "Toratah Newsletter, Social Media and More"
 
 #: templates/static/connect.html:6
 msgid ""
 "Get updates on new texts and features on Sefaria by signing up for our "
 "newsletter or following us on social media."
 msgstr ""
+"Get updates on new texts and features on Toratah by signing up for our "
+"newsletter or following us on social media."
 
 #: templates/static/contest.html:4 templates/static/contest.html:6
 msgid "Powered by Sefaria Contest"
-msgstr ""
+msgstr "FIX THIS Powered by Sefaria Contest"
 
 #: templates/static/contributed-to-sefaria.html:4
 msgid "Texts Contributed to Sefaria"
-msgstr ""
+msgstr "Texts Contributed to Toratah"
 
 #: templates/static/contributed-to-sefaria.html:6
 msgid ""
@@ -974,14 +1011,17 @@ msgid ""
 "directly to Sefaria and have not yet been published elsewhere in print or on "
 "the web."
 msgstr ""
+"Texts on Toratah that list this page as their source were contributed "
+"directly to Toratah and have not yet been published elsewhere in print or on "
+"the web."
 
 #: templates/static/daf-yomi.html:4
 msgid "Daf Yomi | Sefaria"
-msgstr ""
+msgstr "FIX THIS Daf Yomi | Sefaria"
 
 #: templates/static/daf-yomi.html:6
 msgid "Learn the Talmud each day with Daf Yomi on Sefaria."
-msgstr ""
+msgstr "FIX THIS Learn the Talmud each day with Daf Yomi on Sefaria."
 
 #: templates/static/dicta-thanks.html:4
 msgid "Dicta Thanks"
@@ -989,30 +1029,33 @@ msgstr ""
 
 #: templates/static/dicta-thanks.html:6
 msgid "Sefaria thanks Dicta for all of their help."
-msgstr ""
+msgstr "FIX THIS Sefaria thanks Dicta for all of their help."
 
 #: templates/static/digitized-by-sefaria.html:4
 msgid "Texts Digitized by Sefaria"
-msgstr ""
+msgstr "FIX THIS Texts Digitized by Sefaria"
 
 #: templates/static/donate.html:5
 msgid "Donate to Sefaria"
-msgstr ""
+msgstr "Donate to Toratah"
 
 #: templates/static/donate.html:7
 msgid ""
 "Support Sefaria by making a tax-deductible donation online or by check or "
 "wire transfer."
 msgstr ""
+"FIX THIS Support Sefaria by making a tax-deductible donation online or by check or "
+"wire transfer."
 
 #: templates/static/educators.html:4
 msgid "Technology for Jewish Educators | Sefaria"
-msgstr ""
+msgstr "FIX THIS Technology for Jewish Educators | Sefaria"
 
 #: templates/static/educators.html:6
 msgid ""
 "Resources for educators using Sefaria in the classroom to teach Jewish texts."
 msgstr ""
+"FIX THIS Resources for educators using Sefaria in the classroom to teach Jewish texts."
 
 #: templates/static/help.html:4
 msgid "Help, FAQ and Tutorials"
@@ -1023,20 +1066,24 @@ msgid ""
 "Watch video tutorials or read FAQs and written tutorials about how to use "
 "Sefaria."
 msgstr ""
+"FIX THIS Watch video tutorials or read FAQs and written tutorials about how to use "
+"Sefaria."
 
 #: templates/static/ios.html:4
 msgid "Sefaria iOS"
-msgstr ""
+msgstr "FIX THIS Sefaria iOS"
 
 #: templates/static/jobs.html:4
 msgid "Jobs at Sefaria"
-msgstr ""
+msgstr "FIX THIS Jobs at Sefaria"
 
 #: templates/static/jobs.html:6
 msgid ""
 "Job openings at Sefaria, a non-profit technology organization dedicated to "
 "building the Jewish future."
 msgstr ""
+"FIX THIS Job openings at Sefaria, a non-profit technology organization dedicated to "
+"building the Jewish future."
 
 #: templates/static/linker.html:4
 msgid "Linker Plugin"
@@ -1047,23 +1094,25 @@ msgid ""
 "Automatically turn citations on your website into links or dynamic popups "
 "with the full text from Sefaria."
 msgstr ""
+"Automatically turn citations on your website into links or dynamic popups "
+"with the full text from Toratah."
 
 #: templates/static/mobile.html:4
 msgid "Sefaria Mobile Apps"
-msgstr ""
+msgstr "FIX THIS Sefaria Mobile Apps"
 
 #: templates/static/mobile.html:6
 msgid "Download the free Sefaria Apps for iOS and Android."
-msgstr ""
+msgstr "FIX THIS Download the free Sefaria Apps for iOS and Android."
 
 #: templates/static/newsletter.html:4 templates/static/newsletter.html:6
 msgid "Sign up for Sefaria's Newsletter"
-msgstr ""
+msgstr "Sign up for Toratah's Newsletter"
 
 #: templates/static/powered-by-sefaria-contest-2020.html:4
 #: templates/static/powered-by-sefaria-contest-2020.html:6
 msgid "Powered by Sefaria Contest 2020"
-msgstr ""
+msgstr "FIX THIS Powered by Sefaria Contest 2020"
 
 #: templates/static/privacy-policy.html:4
 msgid "Privacy Policy"
@@ -1071,7 +1120,7 @@ msgstr ""
 
 #: templates/static/remote-learning.html:4
 msgid "Remote Learning | Sefaria"
-msgstr ""
+msgstr "Remote Learning | Toratah"
 
 #: templates/static/remote-learning.html:6 templates/static/sheets.html:6
 msgid "Resources for teaching and learning virtually."
@@ -1079,53 +1128,59 @@ msgstr ""
 
 #: templates/static/sefaria-community-translation.html:4
 msgid "About Sefaria Community Translations"
-msgstr ""
+msgstr "FIX THIS About Sefaria Community Translations"
 
 #: templates/static/sefaria-community-translation.html:6
 msgid ""
 "Sefaria Community Translations are open, crowd-sourced translations of texts "
 "available in the Sefaria Library."
 msgstr ""
+"FIX THIS Sefaria Community Translations are open, crowd-sourced translations of texts "
+"available in the Sefaria Library."
 
 #: templates/static/sefaria-edition.html:4
 msgid "About Sefaria Editions"
-msgstr ""
+msgstr "FIX THIS About Sefaria Editions"
 
 #: templates/static/sefaria-edition.html:6
 msgid ""
 "The Sefaria Edition is a Sefaria commissioned translation created by "
 "professional translators."
 msgstr ""
+"FIX THIS The Sefaria Edition is a Sefaria commissioned translation created by "
+"professional translators."
 
 #: templates/static/sheets.html:4
 msgid "Sheets on Sefaria"
-msgstr ""
+msgstr "Sheets on Toratah"
 
 #: templates/static/shraga-silverstein.html:4
 msgid "In Memory of Rabbi Shraga Silverstein"
-msgstr ""
+msgstr "FIX THIS In Memory of Rabbi Shraga Silverstein"
 
 #: templates/static/strategy.html:4
 msgid "Sefaria Strategy"
-msgstr ""
+msgstr "Toratah Strategy"
 
 #: templates/static/supporters.html:4
 msgid "Sefaria's Supporters"
-msgstr ""
+msgstr "Toratah's Supporters"
 
 #: templates/static/supporters.html:6
 msgid ""
 "Sefaria gratefully acknowledges the following donors whose generosity and "
 "leadership are making Sefaria possible."
 msgstr ""
+"FIX THIS Sefaria gratefully acknowledges the following donors whose generosity and "
+"leadership are making Sefaria possible."
 
 #: templates/static/team.html:4
 msgid "The Sefaria Team"
-msgstr ""
+msgstr "The Toratah Team"
 
 #: templates/static/team.html:6
 msgid "Sefaria's team is working to create the Jewish future."
-msgstr ""
+msgstr "FIX THIS Sefaria's team is working to create the Jewish future."
 
 #: templates/static/terms.html:4
 msgid "Terms of Use"
@@ -1133,27 +1188,27 @@ msgstr ""
 
 #: templates/static/testimonials.html:4
 msgid "Sefaria Testimonials"
-msgstr ""
+msgstr "FIX THIS Sefaria Testimonials"
 
 #: templates/static/testimonials.html:6
 msgid "Sefaria’s Impact – Reflections and Insights from Users"
-msgstr ""
+msgstr "FIX THIS Sefaria’s Impact – Reflections and Insights from Users"
 
 #: templates/static/the-sefaria-story.html:4
 msgid "The Sefaria Story"
-msgstr ""
+msgstr "FIX THIS The Sefaria Story"
 
 #: templates/static/the-sefaria-story.html:6
 msgid "Watch a video about the story of Sefaria."
-msgstr ""
+msgstr "FIX THIS Watch a video about the story of Sefaria."
 
 #: templates/static/torah-tab.html:5
 msgid "Sefaria Torah Tab"
-msgstr ""
+msgstr "Toratah Torah Tab"
 
 #: templates/static/torah-tab.html:7
 msgid "Install the free Sefaria Torah Tab for your web browser."
-msgstr ""
+msgstr "FIX THIS Install the free Sefaria Torah Tab for your web browser."
 
 #: templates/static/visualizations.html:4
 msgid "Visualizations"
@@ -1164,6 +1219,8 @@ msgid ""
 "Projects which have been created to make interactive visualizations of the "
 "texts and connections in the Sefaria Library of Torah texts."
 msgstr ""
+"FIX THIS Projects which have been created to make interactive visualizations of the "
+"texts and connections in the Sefaria Library of Torah texts."
 
 #: templates/static/william-davidson-talmud.html:4
 #: templates/static/william-davidson-talmud.html:84
@@ -1203,7 +1260,7 @@ msgstr ""
 
 #: templates/visual_library.html:4
 msgid "Visualizing the Sefaria Library"
-msgstr ""
+msgstr "FIX THIS Visualizing the Sefaria Library"
 
 #: templates/visual_library.html:6
 msgid ""
@@ -1211,6 +1268,9 @@ msgid ""
 "number of words in the texts and categories of Sefaria's library (which is "
 "growing every day!)."
 msgstr ""
+"FIX THIS How big is Torah compared to Talmud? This sunburst diagram lets you see the "
+"number of words in the texts and categories of Sefaria's library (which is "
+"growing every day!)."
 
 #: templates/visual_parasha_colors.html:6
 msgid "Visualizing the Parshiot"
