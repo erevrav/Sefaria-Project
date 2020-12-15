@@ -31,7 +31,7 @@ function HomeFeedSidebar() {
                             <span className="int-he">התחילו בלמידה</span>
                         </h2>
                         <div className="description systemText">
-                            <span className="int-en">Explore commentaries, connections and translations across our free, ever-growing library of texts.</span>
+                            <span className="int-en">FIX THIS Explore commentaries, connections and translations across our library of texts.</span>
                             <span className="int-he">עיינו בפרשנים, קישורים ותרגומים בספריה הדיגטלית של ספריא.</span>
                         </div>
                     </div>
@@ -79,52 +79,55 @@ function HomeFeedSidebar() {
                     </h2>
                     <NewsletterSignUpForm contextName="Home Page Sidebar" />
                     <div id="homeSocialButtons">
-                        <a target="_blank" href={"https://www.facebook.com/sefaria.org" + (Sefaria.interfaceLang == "hebrew" ? ".il" : "")} className="fa fa-facebook"></a>
+                        {/* <a target="_blank" href={"https://www.facebook.com/sefaria.org" + (Sefaria.interfaceLang == "hebrew" ? ".il" : "")} className="fa fa-facebook"></a>
                         <a target="_blank" href="https://www.twitter.com/SefariaProject" className="fa fa-twitter"></a>
                         <a target="_blank" href="https://www.instagram.com/SefariaProject" className="fa fa-instagram"></a>
-                        <a target="_blank" href="https://www.youtube.com/user/SefariaProject" className="fa fa-youtube-play"></a>
+                        <a target="_blank" href="https://www.youtube.com/user/SefariaProject" className="fa fa-youtube-play"></a> */}
+                        <a target="_blank" href={"#" + (Sefaria.interfaceLang == "hebrew" ? "" : "")} className="fa fa-facebook"></a>
+                        <a target="_blank" href="#" className="fa fa-twitter"></a>
+                        <a target="_blank" href="#" className="fa fa-instagram"></a>
+                        <a target="_blank" href="#" className="fa fa-youtube-play"></a>
                     </div>
                 </div>
             </div>
 
-            {/*
             <div id="homeHelp" className="section">
                 <div className="sectionInner">
                     <h2>
-                        <span className="int-en">Support Sefaria</span>
-                        <span className="int-he">תמכו בספריא</span>
+                        <span className="int-en">Support Toratah</span>
+                        <span className="int-he">תמכו בתורתה</span>
                     </h2>
                     <div className="description systemText">
-                        <span className="int-en">Sefaria is an open source, non-profit project. Support us by making a tax-deductible donation or shopping at the Sefaria store.</span>
-                        <span className="int-he">ספריא היא ספריה דיגיטלית פתוחה הפועלת ללא מטרות רווח. תמכו בנו ע"י תרומה פטורה ממס או בקנייה בחנות הווירטואלית של ספריא</span>
+                        <span className="int-en">Toratah is an open source, non-profit project. Support us by making a tax-deductible donation or shopping at the Toratah store.</span>
+                        <span className="int-he">תורתה היא ספריה דיגיטלית פתוחה הפועלת ללא מטרות רווח. תמכו בנו ע"י תרומה פטורה ממס או בקנייה בחנות הווירטואלית של תורתה</span>
                     </div>
                     <a href="/donate">
                         <div className="button white fillWidth control-elem">
                             <img src="/static/img/heart.png" />
                             <span className="int-en">Make a Donation</span>
-                            <span className="int-he">תרמו לספריא</span>
+                            <span className="int-he">תרמו לתורתה</span>
                         </div>
                     </a>
-                    <a href="https://store.sefaria.org/">
+                    {/* <a href="https://store.sefaria.org/"> */}
+                    <a href="#">
                         <div className="button white fillWidth control-elem">
                             <img src="/static/img/shopping-bag.png" />
-                            <span className="int-en">Sefaria Store</span>
-                            <span className="int-he">החנות של ספריא</span>
+                            <span className="int-en">Toratah Store</span>
+                            <span className="int-he">החנות של תורתה</span>
                         </div>
                     </a>
                 </div>
             </div>
-            */}
 
             <div id="homeEducators" className="section">
                 <div className="sectionInner">
                     <div className="textBox">
                          <h2>
-                            <span className="int-en">Teach with Sefaria</span>
-                            <span className="int-he">מלמדים עם ספריא</span>
+                            <span className="int-en">Teach with Toratah</span>
+                            <span className="int-he">מלמדות עם תורתה</span>
                         </h2>
                         <div className="description systemText">
-                            <span className="int-en">Discover Sefaria’s potential in the classroom, connect with other educators and learn to integrate Sefaria into your teaching.</span>
+                            <span className="int-en">Discover Toratah's potential in the classroom, connect with other educators and learn to integrate Toratah into your teaching.</span>
                             <span className="int-he">באמצעות ספריא תוכלו להעצים את חווית הלימוד בכיתה, להתחבר למורים אחרים ולהעמיק את שיטות ההוראה שלכם.</span>
                         </div>
                         <a href="/educators">
@@ -146,14 +149,15 @@ function HomeFeedSidebar() {
                         </h2>
                         <div className="description systemText">
                             <span className="int-en">
-                                Enjoy Sefaria's entire library and all of its links and interconnections on-the-go.
-                                Sefaria’s apps for Android and iOS available to download for free.
+                                FIX THIS Enjoy Toratah's entire library and all of its links and interconnections on-the-go.
+                                Toratah’s apps for Android and iOS available to download for free.
                             </span>
                             <span className="int-he">השתמשו במאגר ובקישורים של ספריא בנייד. האפליקציה זמינה להורדה בחינם.</span>
 
                         </div>
                         <div className="inlineButtonBox">
-                        <a href="https://play.google.com/store/apps/details?id=org.sefaria.sefaria" target="_blank">
+                        {/* <a href="https://play.google.com/store/apps/details?id=org.sefaria.sefaria" target="_blank"> */}
+                        <a href="#" target="_blank">
                             <div className="button white control-elem">
                                 <i className="fa fa-android"></i>
                                 <span className="int-en">Android</span>
@@ -161,7 +165,8 @@ function HomeFeedSidebar() {
                             </div>
                         </a>
                         &nbsp;&nbsp;
-                        <a href="https://itunes.apple.com/us/app/sefaria/id1163273965?ls=1&mt=8" id="iOSButton" target="_blank">
+                        {/* <a href="https://itunes.apple.com/us/app/sefaria/id1163273965?ls=1&mt=8" id="iOSButton" target="_blank"> */}
+                        <a href="#" id="iOSButton" target="_blank">
                             <div className="button white control-elem">
                                 <i className="fa fa-apple"></i>
                                 <span className="int-en">iOS</span>
@@ -204,11 +209,14 @@ function HomeFeed(props) {
                 Video of sofer writing letters of the Torah
             </video>
             <h1 className="featureTitle">
-                <span className="int-en">A Living Library of Jewish Texts</span>
-                <span className="int-he">ספרייה חיה של טקסטים יהודיים</span>
+                <span className="int-en">The Library of Her Bible</span>
+                <span className="int-he">ספרייה חיה</span>
             </h1>
             <div className="sub">
-                <span className="int-en">Explore 3,000 years of Jewish texts in Hebrew and English translation. <a href="/about">Learn More &rsaquo;</a></span>
+                {/* <span className="int-en">FIX THIS Explore 3,000 years of Jewish texts in Hebrew and English translation. <a href="/about">Learn More &rsaquo;</a></span> */}
+                <span className="int-en">FIX THIS The Regendered Bible / Toratah (Her Torah)<br /></span>
+                <span className="int-en">An ongoing initiative to rewrite the Tanakh, the Hebrew Bible, <br /></span>
+                <span className="int-en">by reversing the genders of all characters. <a href="/about">Learn More &rsaquo;</a></span>
                 <span className="int-he">3,000 שנה של טקסטים יהודיים בעברית ובתרגום לאנגלית פרוסים לפניכם. <a href="/about">לקריאה נוספת&rsaquo;</a></span>
             </div>
         </div>

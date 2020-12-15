@@ -504,7 +504,7 @@ class ReaderApp extends Component {
       if (state.menuOpen) {
         switch (state.menuOpen) {
           case "home":
-            hist.title = Sefaria._("Sefaria: a Living Library of Jewish Texts Online");
+            hist.title = Sefaria._("Toratah: The Library of Her Bible");
             hist.url   = "";
             hist.mode  = "home";
             break;
@@ -637,7 +637,7 @@ class ReaderApp extends Component {
             hist.mode = "history";
             break;
           case "homefeed":
-            hist.title = Sefaria._("Torah Stories");
+            hist.title = Sefaria._("Toratah Stories");
             hist.url = "new-home";
             hist.mode = "homefeed";
             break;
@@ -729,7 +729,7 @@ class ReaderApp extends Component {
     if (!histories.length) {debugger;}
 
     // Now merge all history objects into one
-    var title =  histories.length ? histories[0].title : "Sefaria";
+    var title =  histories.length ? histories[0].title : "Toratah";
 
     var url   = "/" + (histories.length ? histories[0].url : "");
     url += this._getUrlVersionsParams(histories[0].currVersions, 0);

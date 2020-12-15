@@ -536,9 +536,9 @@ def text_panels(request, ref, version=None, lang=None, sheet=None):
 
     else:
         sheet = panels[0].get("sheet",{})
-        title = strip_tags(sheet["title"]) + " | " + _("Sefaria")
+        title = strip_tags(sheet["title"]) + " | " + _("Toratah")
         breadcrumb = sheet_crumbs(request, sheet)
-        desc = sheet.get("summary", _("A source sheet created with Sefaria's Source Sheet Builder"))
+        desc = sheet.get("summary", _("A source sheet created with Toratah's Source Sheet Builder"))
         noindex = sheet["status"] != "public"
 
     propsJSON = json.dumps(props)
@@ -589,12 +589,12 @@ def texts_category_list(request, cats):
         if cat_toc is None or len(cats) == 0:
             return texts_list(request)
         cat_string = ", ".join(cats) if request.interfaceLang == "english" else ", ".join([hebrew_term(cat) for cat in cats])
-        title = cat_string + _(" | Sefaria")
+        title = cat_string + _(" | Toratah")
         desc  = _("Read %(categories)s texts online with commentaries and connections.") % {'categories': cat_string}
 
     else:
         title = _("Recently Viewed")
-        desc  = _("Texts that you've recently viewed on Sefaria.")
+        desc  = _("Texts that you've recently viewed on Toratah.")
 
     props.update({
         "initialMenu": "navigation",
@@ -693,8 +693,8 @@ def search(request):
     return render(request,'base.html', {
         "propsJSON": propsJSON,
         "html":      html,
-        "title":     (search_params["query"] + " | " if search_params["query"] else "") + _("Sefaria Search"),
-        "desc":      _("Search 3,000 years of Jewish texts in Hebrew and English translation.")
+        "title":     (search_params["query"] + " | " if search_params["query"] else "") + _("Toratah Search"),
+        "desc":      _("FIX THIS Search 3,000 years of Jewish texts in Hebrew and English translation.")
     })
 
 
@@ -726,8 +726,8 @@ def sheets(request):
         "trendingTags": trending_topics(ntags=18)
     })
 
-    title = _("Sefaria Source Sheets")
-    desc  = _("Explore thousands of public Source Sheets and use our Source Sheet Builder to create your own online.")
+    title = _("Toratah Source Sheets")
+    desc  = _("FIX THIS Explore thousands of public Source Sheets and use our Source Sheet Builder to create your own online.")
     propsJSON = json.dumps(props)
     html = render_react_component("ReaderApp", propsJSON)
     return render(request, 'base.html', {
@@ -757,7 +757,7 @@ def get_group_page(request, group, authenticated):
     return render(request, 'base.html', {
         "propsJSON": propsJSON,
         "html": html,
-        "title": group[0].name + " | " + _("Sefaria Groups"),
+        "title": group[0].name + " | " + _("Toratah Groups"),
         "desc": props["groupData"].get("description", ""),
         "noindex": not getattr(group[0], "listed", False)
     })
@@ -768,20 +768,20 @@ def public_groups(request):
     props.update({
         "groupListing": GroupSet.get_group_listing(request.user.id)
     })
-    title = _("Sefaria Groups")
+    title = _("Toratah Groups")
     return menu_page(request, props, "publicGroups")
 
 
 @login_required
 def my_groups(request):
     props = base_props(request)
-    title = _("Sefaria Groups")
+    title = _("Toratah Groups")
     return menu_page(request, props, "myGroups")
 
 
 @login_required
 def my_notes(request):
-    title = _("My Notes on Sefaria")
+    title = _("My Notes on Toratah")
     props = base_props(request)
     return menu_page(request, props, "myNotes", title)
 
@@ -885,7 +885,7 @@ def texts_list(request):
         "calendars": get_todays_calendar_items(**_get_user_calendar_params(request))
     })
     title = _(SITE_SETTINGS["LIBRARY_NAME"]["en"])
-    desc  = _("Browse 1,000s of Jewish texts in the Sefaria Library by category and title.")
+    desc  = _("FIX THIS Browse 1,000s of Jewish texts in the Sefaria Library by category and title.")
     return menu_page(request, props, "navigation", title, desc)
 
 
@@ -897,7 +897,7 @@ def saved(request):
             "saved": UserProfile(user_obj=request.user).get_user_history(saved=True, secondary=False, serialized=True)
         })
     title = _("My Saved Content")
-    desc = _("See your saved content on Sefaria")
+    desc = _("See your saved content on Toratah")
     return menu_page(request, props, "saved", title, desc)
 
 
@@ -911,14 +911,14 @@ def user_history(request):
         "userHistory": uhistory
     })
     title = _("My User History")
-    desc = _("See your user history on Sefaria")
+    desc = _("See your user history on Toratah")
     return menu_page(request, props, "history", title, desc)
 
 
 def updates(request):
     props = base_props(request)
-    title = _("New Additions to the Sefaria Library")
-    desc  = _("See texts, translations and connections that have been recently added to Sefaria.")
+    title = _("New Additions to the Toratah Library")
+    desc  = _("See texts, translations and connections that have been recently added to Toratah.")
     return menu_page(request, props, "updates", title, desc)
 
 
@@ -927,8 +927,8 @@ def new_home(request):
     props.update({
         "calendars": get_todays_calendar_items(**_get_user_calendar_params(request))
     })
-    title = _("Sefaria: a Living Library of Jewish Texts Online")
-    desc  = _( "The largest free library of Jewish texts available to read online in Hebrew and English including Torah, Tanakh, Talmud, Mishnah, Midrash, commentaries and more.")
+    title = _("Toratah: The Library of Her Bible")
+    desc  = _( "FIX THIS The largest free library of Jewish texts available to read online in Hebrew and English including Torah, Tanakh, Talmud, Mishnah, Midrash, commentaries and more.")
     return menu_page(request, props, "homefeed", title, desc)
 
 
@@ -947,7 +947,7 @@ def user_stats(request):
 
 @login_required
 def account(request):
-    title = _("Sefaria Account")
+    title = _("Toratah Account")
     props = base_props(request)
     return menu_page(request, props, "account", title)
 
@@ -955,7 +955,7 @@ def account(request):
 @login_required
 def notifications(request):
     # Notifications content is not rendered server side
-    title = _("Sefaria Notifications")
+    title = _("Toratah Notifications")
     props = base_props(request)
     notifications = UserProfile(user_obj=request.user).recent_notifications()
     props.update({
@@ -1863,7 +1863,7 @@ def links_api(request, link_id_or_ref=None):
             return jsonResponse({"error": "No link id given for deletion."})
         
         if not user.is_staff:
-            return jsonResponse({"error": "Only Sefaria Moderators can delete links."})
+            return jsonResponse({"error": "Only Toratah Moderators can delete links."})
         
         try:
             ref = Ref(link_id_or_ref)
@@ -2138,7 +2138,7 @@ def lock_text_api(request, title, lang, version):
     To unlock, include the URL parameter "action=unlock"
     """
     if not request.user.is_staff:
-        return jsonResponse({"error": "Only Sefaria Moderators can lock texts."})
+        return jsonResponse({"error": "Only Toratah Moderators can lock texts."})
 
     title   = title.replace("_", " ")
     version = version.replace("_", " ")
@@ -2174,7 +2174,7 @@ def flag_text_api(request, title, lang, version):
             return jsonResponse({"error": "Unrecognized API key."})
         user = User.objects.get(id=apikey["uid"])
         if not user.is_staff:
-            return jsonResponse({"error": "Only Sefaria Moderators can flag texts."})
+            return jsonResponse({"error": "Only Toratah Moderators can flag texts."})
 
         flags = json.loads(request.POST.get("json"))
         title   = title.replace("_", " ")
@@ -2271,7 +2271,7 @@ def category_api(request, path=None):
                 return jsonResponse({"error": "Unrecognized API key."})
             user = User.objects.get(id=apikey["uid"])
             if not user.is_staff:
-                return jsonResponse({"error": "Only Sefaria Moderators can add or delete categories."})
+                return jsonResponse({"error": "Only Toratah Moderators can add or delete categories."})
             uid = apikey["uid"]
             kwargs = {"method": "API"}
         elif request.user.is_staff:
@@ -2279,7 +2279,7 @@ def category_api(request, path=None):
             kwargs = {}
             _internal_do_post = csrf_protect(_internal_do_post)
         else:
-            return jsonResponse({"error": "Only Sefaria Moderators can add or delete categories."})
+            return jsonResponse({"error": "Only Toratah Moderators can add or delete categories."})
 
         j = request.POST.get("json")
         if not j:
@@ -2393,7 +2393,7 @@ def terms_api(request, name):
                 return jsonResponse({"error": "Unrecognized API key."})
             user = User.objects.get(id=apikey["uid"])
             if not user.is_staff:
-                return jsonResponse({"error": "Only Sefaria Moderators can add or edit terms."})
+                return jsonResponse({"error": "Only Toratah Moderators can add or edit terms."})
             uid = apikey["uid"]
             kwargs = {"method": "API"}
         elif request.user.is_staff:
@@ -2401,7 +2401,7 @@ def terms_api(request, name):
             kwargs = {}
             _internal_do_post = csrf_protect(_internal_do_post)
         else:
-            return jsonResponse({"error": "Only Sefaria Moderators can add or edit terms."})
+            return jsonResponse({"error": "Only Toratah Moderators can add or edit terms."})
 
         return jsonResponse(_internal_do_post(request, uid))
 
@@ -2613,7 +2613,7 @@ def stories_api(request, gid=None):
                 return jsonResponse({"error": "Unrecognized API key."})
             user = User.objects.get(id=apikey["uid"])
             if not user.is_staff:
-                return jsonResponse({"error": "Only Sefaria Moderators can add stories."})
+                return jsonResponse({"error": "Only Toratah Moderators can add stories."})
 
             payload = json.loads(request.POST.get("json"))
             try:
@@ -2773,7 +2773,7 @@ def updates_api(request, gid=None):
                 return jsonResponse({"error": "Unrecognized API key."})
             user = User.objects.get(id=apikey["uid"])
             if not user.is_staff:
-                return jsonResponse({"error": "Only Sefaria Moderators can add announcements."})
+                return jsonResponse({"error": "Only Toratah Moderators can add announcements."})
 
             payload = json.loads(request.POST.get("json"))
             try:
@@ -2940,7 +2940,7 @@ def texts_history_api(request, tref, lang=None, version=None):
             summary["editors"].update([act["user"]])
         elif act["rev_type"] == "review":
             summary["reviewers"].update([act["user"]])
-        elif act["version"] == "Sefaria Community Translation":
+        elif act["version"] == "Toratah Community Translation":
             summary["translators"].update([act["user"]])
         else:
             summary["copiers"].update([act["user"]])
@@ -3040,8 +3040,8 @@ def topics_page(request):
     html = render_react_component("ReaderApp", propsJSON)
     return render(request, 'base.html', {
         "propsJSON":      propsJSON,
-        "title":          _("Topics") + " | " + _("Sefaria"),
-        "desc":           _("Explore Jewish Texts by Topic on Sefaria"),
+        "title":          _("Topics") + " | " + _("Toratah"),
+        "desc":           _("Explore Jewish Texts by Topic on Toratah"),
         "html":           html,
     })
 
@@ -3072,8 +3072,8 @@ def topic_page(request, topic):
     })
 
     short_lang = 'en' if request.interfaceLang == 'english' else 'he'
-    title = topic_obj.get_primary_title(short_lang) + " | " + _("Texts & Source Sheets from Torah, Talmud and Sefaria's library of Jewish sources.")
-    desc = _("Jewish texts and source sheets about %(topic)s from Torah, Talmud and other sources in Sefaria's library.") % {'topic': topic_obj.get_primary_title(short_lang)}
+    title = topic_obj.get_primary_title(short_lang) + " | " + _("FIX THIS Texts & Source Sheets from Torah, Talmud and Sefaria's library of Jewish sources.")
+    desc = _("FIX THIS Jewish texts and source sheets about %(topic)s from Torah, Talmud and other sources in Sefaria's library.") % {'topic': topic_obj.get_primary_title(short_lang)}
     topic_desc = getattr(topic_obj, 'description', {}).get(short_lang, '')
     if topic_desc is not None:
         desc += " " + topic_desc
@@ -3195,7 +3195,7 @@ def global_activity(request, page=1):
     page_size = 100
 
     if page > 40:
-        generic_response = { "title": "Activity Unavailable", "content": "You have requested a page deep in Sefaria's history.<br><br>For performance reasons, this page is unavailable. If you need access to this information, please <a href='mailto:dev@sefaria.org'>email us</a>." }
+        generic_response = { "title": "Activity Unavailable", "content": "You have requested a page deep in Toratah's history.<br><br>For performance reasons, this page is unavailable. If you need access to this information, please <a href='mailto:dev@sefaria.org'>email us</a>." }
         return render(request,'static/generic.html', generic_response)
 
     if "api" in request.GET:
@@ -3236,7 +3236,7 @@ def user_activity(request, slug, page=1):
 
 
     if page > 40:
-        generic_response = { "title": "Activity Unavailable", "content": "You have requested a page deep in Sefaria's history.<br><br>For performance reasons, this page is unavailable. If you need access to this information, please <a href='mailto:dev@sefaria.org'>email us</a>." }
+        generic_response = { "title": "Activity Unavailable", "content": "You have requested a page deep in Toratah's history.<br><br>For performance reasons, this page is unavailable. If you need access to this information, please <a href='mailto:dev@sefaria.org'>email us</a>." }
         return render(request,'static/generic.html', generic_response)
 
     q              = {"user": profile.id}
@@ -3355,8 +3355,8 @@ def user_profile(request, username):
         "initialMenu":  "profile",
         "initialProfile": profileJSON,
     })
-    title = "%(full_name)s on Sefaria" % {"full_name": requested_profile.full_name}
-    desc = '%(full_name)s is on Sefaria. Follow to view their public source sheets, notes and translations.' % {"full_name": requested_profile.full_name}
+    title = "%(full_name)s on Toratah" % {"full_name": requested_profile.full_name}
+    desc = '%(full_name)s is on Toratah. Follow to view their public source sheets, notes and translations.' % {"full_name": requested_profile.full_name}
 
     propsJSON = json.dumps(props)
     html = render_react_component("ReaderApp", propsJSON)
@@ -3882,7 +3882,7 @@ def random_by_topic_api(request):
 def dummy_search_api(request):
     # Thou shalt upgrade thine app or thou shalt not glean the results of search thou seeketh
     # this api is meant to information users of the old search.sefaria.org to upgrade their apps to get search to work again
-    were_sorry = "We're sorry, but your version of the app is no longer compatible with our new search. We recommend you upgrade the Sefaria app to fully enjoy all it has to offer <br> עמכם הסליחה, אך גרסת האפליקציה הנמצאת במכשירכם איננה תואמת את מנוע החיפוש החדש. אנא עדכנו את אפליקצית ספריא להמשך שימוש בחיפוש"
+    were_sorry = "FIX THIS We're sorry, but your version of the app is no longer compatible with our new search. We recommend you upgrade the Sefaria app to fully enjoy all it has to offer <br> עמכם הסליחה, אך גרסת האפליקציה הנמצאת במכשירכם איננה תואמת את מנוע החיפוש החדש. אנא עדכנו את אפליקצית ספריא להמשך שימוש בחיפוש"
     resp = jsonResponse({
         "took": 613,
         "timed_out": False,
